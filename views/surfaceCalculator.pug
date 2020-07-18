@@ -1,0 +1,42 @@
+extends layout
+
+
+
+
+
+block content
+  form(class='container h-100 p-3' id='address-form' onSubmit='return false')
+
+      div(class='block p-5 my-3 d-none')
+        div(class='row')
+          div(class='col-lg-9')
+            input(class='form-control' id="address-input"  placeholder='Enter address  Ex. Santa Monica Bay, Santa Monica, California')
+          div(class='col-lg-3')
+            input(type='submit' value='Search' class='btn btn-block btn-danger')
+
+      div(class='row h-100')
+        div(class='col-lg-4')
+          div(class='block p-5  h-100')
+            h3(class='text-center pb-2') Surface area calculator
+            div(id='result') Select surface area to be computed on the map.
+
+        div(class='col-lg-8')
+
+          div(class='p-5 h-25 block')
+            div(class='row')
+              div(class='col-lg-9')
+                input(class='form-control' id="address-input"  placeholder='Enter address  Ex. Santa Monica Bay, Santa Monica, California')
+              div(class='col-lg-3')
+                input(type='submit' value='Search' class='btn btn-block btn-danger')
+
+
+          div(class='h-75 pt-3')
+            div(id='map')
+
+
+block scripts
+  script(src='/javascripts/surface.js')
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF29yHsrVzGWjLXQ48C_XFnXSd1t6ABFU&libraries=drawing&callback=initMap", async, defer )
+
+block styles
+  link(rel='stylesheet' href="/stylesheets/surface.css")

@@ -1,0 +1,33 @@
+body {
+  /* //padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/background2.webp");
+  background-size: cover;
+  background-color: #cccccc;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.block{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#navigation > .row > div:hover{
+  background: rgba(30, 0, 80, 0.7);
+}
+
+.project{
+  background: purple;
+  min-height: 150px;
+  display: block;
+  /* overflow: hidden; */
+
+}
+.project img{
+  width: auto;
+  height: 150px;
+}

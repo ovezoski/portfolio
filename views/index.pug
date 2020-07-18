@@ -1,0 +1,84 @@
+extends layout
+
+block content
+
+
+
+  div(class='p-4' id='start')
+
+
+    div(class='block container p-5 text-center h-50')
+      div(class='row align-items-center justify-content-center')
+        div(class='text-right border-right')
+          h2(class='p-3') Blagoja Ovezoski
+        div(class='text-muted')
+          h5(class='p-3') Software developer
+
+    div(id="navigation" class='block container px-5 py-1 mt-4 text-center h-50')
+      div(class='row d-flex align-items-stretch')
+          div(class='col-lg-4 p-2')
+            a(href='#projects')
+              h3(class='p-5') Projects
+              i(class='fas fa-briefcase fa-7x')
+          div(class='col-lg-4 p-2')
+            a(href='#skills')
+              h3(class='p-5') Skills
+              i(class='fas fa-tools fa-7x')
+          div(class='col-lg-4 p-2')
+            a(href='#achievements')
+              h3(class='p-5') Achievements
+              i(class='fas fa-medal fa-7x')
+
+  div(class='p-2')
+    div(id='projects' class='block container p-5 mt-4 text-center justify-content-center h-100')
+      div(class='w-25 m-auto')
+        h3(class='border-bottom p-2') Projects
+
+
+      div(class='row d-flex align-items-stretch mt-5')
+        div(class='col-lg-6 py-3')
+          div(class='project')
+            h5 mozi
+            img(src='/images/project.png')
+        div(class='col-lg-6 py-3')
+          div(class='project')
+            h5 mozi
+        div(class='col-lg-6 py-3')
+          div(class='project')
+            h5 mozi
+        div(class='col-lg-6 py-3')
+          div(class='project')
+            h5 mozi
+
+  div(class='p-2')
+    div(id='skills' class='block container p-5 mt-4 text-center justify-content-center h-100')
+      div(class='w-25 m-auto')
+        h3(class='border-bottom p-2') Skills
+
+      div(class='row mt-2 p-5')
+        div(class='p-5 col-md-4')
+          i(class='fab fa-node fa-7x')
+          div node.js
+        div(class='p-5 col-md-4')
+          i(class='fas fa-database fa-7x')
+          div MongoDB
+        div(class='p-5 col-md-4')
+          i(class='fas fa-map-marked-alt fa-7x')
+          div Google Maps API
+        div(class='p-5 col-md-4')
+          i(class='fas fa-eye fa-7x')
+          div Google Vision API
+        div(class='p-5 col-md-4')
+          i(class='fab fa-js fa-7x')
+          div JavaScript
+        div(class='p-5 col-md-4')
+          i(class='fas fa-comments fa-7x')
+          div Dialogueflow
+
+
+
+
+  div(class='p-2')
+    div(id='achievements' class='block container p-5 mt-4 text-center justify-content-center h-100')
+      div(class='w-25 m-auto')
+        h3(class='border-bottom p-2') Achievements
